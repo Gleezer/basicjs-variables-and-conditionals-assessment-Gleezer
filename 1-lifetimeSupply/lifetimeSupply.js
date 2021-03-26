@@ -35,3 +35,26 @@
 // Then test out your program with different numbers and snack!
 //
 // Write your code here 👇
+
+let yourSnack = prompt("Please Enter your favorite snack")
+let numTimesEat = prompt("How many of your favorite snack would you eat in a day?")
+let curAge = prompt("Please enter your current age")
+
+let subAge = 100 - curAge
+let numDays = subAge * 365
+let lifeEat = numDays * numTimesEat
+
+
+document.write("Congratulations! You lucky person you!  You have won a lifetime supply of "
+ + yourSnack
+ + "!"
+ + "<br/>You will receive " 
+ + numTimesEat
+ + " "
+ + yourSnack
+ + " per day, for a grand total of "
+ + lifeEat.toLocaleString(1000000)
+ + " "
+ + yourSnack
+ +". That you will receive till you are 100 years old!."
+);
