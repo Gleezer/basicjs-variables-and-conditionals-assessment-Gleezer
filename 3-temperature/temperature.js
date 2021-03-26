@@ -41,3 +41,16 @@
 // Like 76.266666666667, that's perfectly fine!  You can leave those as is.
 //
 // Write your code here 👇
+
+let entNum = prompt("Please enter the number of degrees your want to convert:")
+let entDegree = prompt("What would you like to convert to, Celsius or Fahrenheit? Enter c or f...")
+console.log(entNum)
+console.log(entDegree)
+
+if (entDegree === "c" || entDegree === "C") {
+    let result = ((entNum / 5 * 9) + 32).toFixed(0)
+    document.write(`${entNum}°C converted to Fahrenheit is ${result}°F` )
+} else {
+    let result = ((entNum - 32) * 5 / 9).toFixed(0)
+    document.write(`${entNum}°F converted to Celsius is ${result}°C`)
+}

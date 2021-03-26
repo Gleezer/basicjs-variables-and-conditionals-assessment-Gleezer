@@ -22,3 +22,14 @@
 // Print your message to the browser using document.write()
 //
 // Write your code here 👇
+
+let yearBorn = prompt("Please enter the year you were born:")
+let yearInput = prompt("Please in put a year into the future:")
+
+let yourYear = yearInput - yearBorn
+// console.log(yourYear)
+let yourYear2 = yourYear - 1
+//console.log(yourYear2)
+let message = (`I will either be ${yourYear} or ${yourYear2} in ${yearInput}! <br/> Wow thats old!`)
+//console.log(message)
+document.write(message)
