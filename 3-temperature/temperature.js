@@ -44,13 +44,13 @@
 
 let entNum = prompt("Please enter the number of degrees your want to convert:")
 let entDegree = prompt("What would you like to convert to, Celsius or Fahrenheit? Enter c or f...")
-console.log(entNum)
-console.log(entDegree)
+//console.log(entNum)
+//console.log(entDegree)
 
 if (entDegree === "c" || entDegree === "C") {
-    let result = ((entNum / 5 * 9) + 32).toFixed(0)
+    let result = ((entNum / 5 * 9) + 32).toFixed(1)
     document.write(`${entNum}°C converted to Fahrenheit is ${result}°F` )
 } else {
-    let result = ((entNum - 32) * 5 / 9).toFixed(0)
+    let result = ((entNum - 32) * 5 / 9).toFixed(1)
     document.write(`${entNum}°F converted to Celsius is ${result}°C`)
 }
